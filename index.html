@@ -3,198 +3,565 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lễ hội Sen Đồng Tháp 2026</title>
+  <title>Về Nghe Sen Kể Chuyện | Mega Story Đồng Tháp</title>
+  <meta name="description" content="Mega Story lễ hội Sen Đồng Tháp 2026 với ảnh, video phỏng vấn du khách và chatbot Sen Hồng AI." />
+  <meta property="og:title" content="Về Nghe Sen Kể Chuyện | Mega Story Đồng Tháp" />
+  <meta property="og:description" content="Một tác phẩm báo chí đa phương tiện về lễ hội Sen Đồng Tháp, văn hóa, du lịch và khát vọng vươn xa." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://example.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://example.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.0/css/lightgallery-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.0/lightgallery.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.0/plugins/zoom/lg-zoom.umd.min.js"></script>
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Về Nghe Sen Kể Chuyện",
+    "description": "Mega Story lễ hội Sen Đồng Tháp 2026 với ảnh, video phỏng vấn du khách và chatbot Sen Hồng AI.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "author": {
+      "@type": "Person",
+      "name": "Trần Trung Kiên"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Đất Sen Hồng",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+      }
+    },
+    "datePublished": "2026-06-28",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://example.com"
+    }
+  }
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">ĐẤT SEN HỒNG</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#about">Giới thiệu</a>
-        <a href="#experience">Trải nghiệm</a>
-        <a href="#stories">Câu chuyện</a>
-        <a href="#stats">Số liệu</a>
-        <a href="#contact">Liên hệ</a>
+<body class="bg-[#FFFDF8] text-[#222222] antialiased">
+  <div class="progress-line fixed top-0 left-0 h-1 bg-[#EC407A] w-0 z-50"></div>
+  <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-[#FFD54F]/30 bg-white/90 backdrop-blur-xl shadow-sm">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#hero" class="flex items-center gap-3 text-[#2E7D32]">
+        <div class="flex h-14 w-14 items-center justify-center rounded-3xl bg-[#F48FB1]/15 shadow-inner shadow-[#F48FB1]/20 overflow-hidden">
+          <img src="images/z7984440074780_7e6ade2839afa8d5469039758169bd6e.jpg" alt="Logo" class="h-full w-full object-cover" />
+        </div>
+        <div>
+          <p class="text-[0.65rem] uppercase tracking-[0.35em] text-[#4CAF50]">Mega Story</p>
+          <p class="font-semibold text-2xl md:text-3xl leading-tight font-viet-hoa tracking-[0.04em]">Về Nghe Sen Kể Chuyện</p>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-6 lg:flex">
+        <a href="#sapo" class="nav-link">Giới thiệu</a>
+        <a href="#story" class="nav-link">Sen kể chuyện</a>
+        <a href="#economy" class="nav-link">Giá trị</a>
+        <a href="#video" class="nav-link">Du khách</a>
+        <a href="#culture" class="nav-link">Văn hóa</a>
+        <a href="#final" class="nav-link">Kết luận</a>
       </nav>
-      <button class="nav-toggle" aria-label="Mở menu">☰</button>
+      <button class="inline-flex items-center gap-2 rounded-full bg-[#EC407A] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#F48FB1]" type="button" id="openChat">
+        <img src="images/1617361763-dung-de-be-sen-mot-minh.png" alt="Sen Hồng AI" class="open-chat-icon" />
+        Sen Hồng AI
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="top">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <span class="eyebrow">ĐẶC SAN ĐA PHƯƠNG TIỆN</span>
-        <h1>Lễ hội Sen Đồng Tháp 2026</h1>
-        <p>Về Tháp Mười nghe sen kể khúc ca bình dị mà can trường của đất chín rồng.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#about">Khám phá ngay</a>
-          <a class="button button-secondary" href="#stats">Số liệu ấn tượng</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="intro container" id="about">
-      <div class="intro-grid">
-        <div>
-          <span class="section-label">Về nghe sen kể chuyện</span>
-          <h2>Hành trình văn hóa, du lịch và giá trị bền vững</h2>
-          <p>Lễ hội Sen Đồng Tháp 2026 mang đến câu chuyện thu hút từ đầm sen bát ngát đến đại lộ khinh khí cầu rực rỡ. Trang web này giới thiệu trải nghiệm, con số và hình ảnh chuyên nghiệp như một ấn phẩm báo chí đa phương tiện.</p>
-          <div class="tag-list">
-            <span>Sinh thái</span>
-            <span>Văn hóa</span>
-            <span>Du lịch</span>
-            <span>OCOP</span>
+    <section id="hero" class="relative min-h-screen overflow-hidden pt-24">
+      <div class="hero-bg absolute inset-0 bg-cover bg-center" style="background-image:url('images/z7982762645031_10e88bdfb62adf165d0a704b2b0fb107 - Sao chép.jpg');"></div>
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_top,_rgba(244,143,177,0.35),_transparent_32%)]"></div>
+      <div class="relative mx-auto flex min-h-[calc(100vh-96px)] max-w-7xl items-center px-5 py-24 lg:px-8">
+        <div class="w-full rounded-[32px] border border-white/10 bg-white/10 p-8 shadow-[0_40px_90px_rgba(0,0,0,0.25)] backdrop-blur-xl lg:max-w-3xl" data-aos="fade-up">
+          <span class="inline-flex rounded-full bg-[#FFF1F6]/70 px-4 py-2 text-xs uppercase tracking-[0.28em] text-[#EC407A]">Mega Story</span>
+          <h1 class="mt-8 text-5xl font-[Playfair_Display] leading-[0.95] text-white md:text-6xl xl:text-7xl">Về Nghe Sen Kể Chuyện</h1>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-[#FAFAF8]/90 md:text-lg">Từ lễ hội văn hóa đến khát vọng vươn xa của Đất Sen Hồng — một tác phẩm báo chí đa phương tiện dành cho độc giả muốn cảm nhận trọn vẹn hồn sen.</p>
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-[28px] bg-white/10 p-5 text-[#FAFAF8]">
+              <p class="text-[0.75rem] uppercase tracking-[0.24em] text-[#FFD54F]">Tác giả</p>
+              <p class="mt-3 font-semibold">Trần Trung Kiên</p>
+            </div>
+            <div class="rounded-[28px] bg-white/10 p-5 text-[#FAFAF8]">
+              <p class="text-[0.75rem] uppercase tracking-[0.24em] text-[#FFD54F]">Ngày tác nghiệp</p>
+              <p class="mt-3 font-semibold">28/06/2026</p>
+            </div>
+            <div class="rounded-[28px] bg-white/10 p-5 text-[#FAFAF8]">
+              <p class="text-[0.75rem] uppercase tracking-[0.24em] text-[#FFD54F]">Phỏng vấn</p>
+              <p class="mt-3 font-semibold">Video du khách</p>
+            </div>
+          </div>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="#sapo" class="button-primary inline-flex w-full items-center justify-center rounded-full px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-[#FF80AB] sm:w-auto">Khám phá câu chuyện</a>
+            <a href="#sapo" class="inline-flex items-center gap-2 text-sm uppercase tracking-[0.18em] text-[#FFECB3] transition hover:text-white">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span>Scroll</span>
+            </a>
           </div>
         </div>
-        <div class="intro-card">
-          <img src="https://l-h-i-sen-ng-th-p-2026-286482501225.asia-southeast1.run.app/src/assets/images/lotus_boulevard_balloons_1782563256291.jpg" alt="Khinh khí cầu lễ hội sen Đồng Tháp" />
-          <div class="intro-card-text">
-            <strong>Không gian lễ hội</strong>
-            <p>Đại lộ Sen khổng lồ, cổng chào nghệ thuật và khu vực check-in sáng tạo tạo nên trải nghiệm không thể quên.</p>
+      </div>
+    </section>
+
+    <section id="quick-info" class="relative bg-[#FFFDF8] py-12">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8" data-aos="fade-up">
+        <div class="rounded-[36px] border border-[#F8BBD0]/35 bg-white p-8 shadow-[0_30px_80px_rgba(244,143,177,0.12)]">
+          <div class="grid gap-4 lg:grid-cols-5">
+            <article class="info-box text-center">
+              <p class="text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Địa điểm</p>
+              <p class="mt-4 text-xl font-semibold text-[#222222]">Cao Lãnh, Đồng Tháp</p>
+            </article>
+            <article class="info-box text-center">
+              <p class="text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Thời gian</p>
+              <p class="mt-4 text-xl font-semibold text-[#222222]">18–21/6/2026</p>
+            </article>
+            <article class="info-box text-center">
+              <p class="text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Chủ đề</p>
+              <p class="mt-4 text-xl font-semibold text-[#222222]">“Về nghe Sen kể chuyện”</p>
+            </article>
+            <article class="info-box text-center">
+              <p class="text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Hoạt động</p>
+              <p class="mt-4 text-xl font-semibold text-[#222222]">30+ sự kiện</p>
+            </article>
+            <article class="info-box text-center">
+              <p class="text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Lượt khách</p>
+              <p class="mt-4 text-xl font-semibold text-[#222222]">500.000+</p>
+            </article>
+          </div>
+          <p class="mt-6 text-right text-xs text-[#555555]">Nguồn tham khảo: Ban Tổ Chức</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sapo" class="relative bg-[#FFFDF8] py-24">
+      <div class="mx-auto max-w-3xl rounded-[40px] border border-[#F8BBD0]/35 bg-white p-10 shadow-[0_30px_80px_rgba(244,143,177,0.12)]" data-aos="fade-up">
+        <p class="text-center text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Sapo</p>
+        <h2 class="mt-6 text-center text-4xl font-[Playfair_Display] leading-[1.05] text-[#222222] md:text-5xl">Một mega story báo chí về lễ hội Sen Đồng Tháp — nơi văn hóa và khát vọng vươn xa giao thoa.</h2>
+        <p class="mt-8 text-center text-xl leading-9 text-[#555555]">Bài viết này là hành trình đi qua những làng sen, phóng sự du lịch, giá trị kinh tế và trải nghiệm đời thực của du khách. Mỗi phần là một khoảnh khắc ghi lại linh hồn Đồng Tháp.</p>
+      </div>
+    </section>
+
+    <section id="story" class="relative overflow-hidden py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+          <div class="space-y-8" data-aos="fade-right">
+            <p class="inline-flex items-center gap-3 rounded-full bg-[#F48FB1]/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-[#EC407A]">Sen kể chuyện</p>
+            <h2 class="text-4xl font-[Playfair_Display] leading-tight text-[#222222] md:text-5xl">Sen là âm thanh, là mảng màu và là câu chuyện của một vùng đất giàu bản sắc.</h2>
+            <p class="max-w-2xl text-lg leading-8 text-[#555555]">Một đầm sen mở ra bức tranh sinh thái, một lễ hội gợi nhớ ký ức, và những người kể chuyện hôm nay truyền đi khát vọng Đồng Tháp vươn ra thế giới.</p>
+          </div>
+          <div class="relative overflow-hidden rounded-[36px] bg-[#F48FB1]/10 shadow-[0_30px_90px_rgba(244,143,177,0.2)]" data-aos="zoom-in">
+            <!-- PLACEHOLDER 02: ảnh nội dung 1 -->
+            <img src="images/z7982860682186_f82edab3d032e5729eee9a74a5547df0.jpg" alt="Đầm sen Đồng Tháp" class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-8 text-white">
+              <h3 class="mt-3 text-2xl font-semibold">Mùa sen hồng trải dài đến chân trời.</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 grid gap-8 lg:grid-cols-3">
+          <article class="info-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box bg-[#FFC107]/15 text-[#FFB300]"><i class="fa-solid fa-seedling"></i></div>
+            <h3 class="mt-4 text-xl font-semibold text-[#222222]">Chủ đề</h3>
+            <p class="mt-3 text-[#555555]">Lễ hội Sen Đồng Tháp 2026 khắc họa tinh thần ăn sâu trong đời sống nông nghiệp và bản sắc vùng miền.</p>
+          </article>
+          <article class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box bg-[#4CAF50]/15 text-[#2E7D32]"><i class="fa-solid fa-clock"></i></div>
+            <h3 class="mt-4 text-xl font-semibold text-[#222222]">Thời gian</h3>
+            <p class="mt-3 text-[#555555]">18 - 21 tháng 6/2026, xuyên suốt một tuần lễ dòng sen và các hoạt động du lịch đặc sắc.</p>
+          </article>
+          <article class="info-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box bg-[#F48FB1]/15 text-[#EC407A]"><i class="fa-solid fa-location-dot"></i></div>
+            <h3 class="mt-4 text-xl font-semibold text-[#222222]">Địa điểm</h3>
+            <p class="mt-3 text-[#555555]">Cao Lãnh, Đồng Tháp — vùng đất sen hồng và văn hóa Nam Bộ đậm đà.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section-pane bg-[#FAFAF8] py-24">
+      <div class="mx-auto max-w-6xl px-5 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div data-aos="fade-right">
+            <p class="uppercase tracking-[0.35em] text-[#4CAF50]">Timeline</p>
+            <h2 class="mt-4 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Những dấu ấn của Lễ hội Sen Đồng Tháp lần III</h2>
+            <p class="mt-6 text-[#555555]">Lễ hội Sen Đồng Tháp lần thứ III diễn ra từ 18/06 đến 21/06/2026 tại Quảng trường Văn Miếu, Cao Lãnh, với chủ đề “Về nghe Sen kể chuyện”.</p>
+            <div class="timeline mt-10">
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <span>18/06</span>
+                <h4 class="mt-3 text-lg font-semibold text-[#222222]">Lễ khai mạc</h4>
+                <p class="mt-2 text-[#555555]">Quảng trường Văn Miếu, Cao Lãnh</p>
+                <ul class="mt-4 space-y-2 text-[#555555] list-disc list-inside">
+                  <li>Lễ khai mạc chính thức</li>
+                  <li>Chương trình nghệ thuật đặc sắc</li>
+                  <li>Trình diễn ánh sáng - mapping 3D</li>
+                  <li>Biểu diễn văn hóa, nghệ thuật</li>
+                  <li>Giới thiệu không gian lễ hội</li>
+                </ul>
+              </div>
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <span>19/06</span>
+                <h4 class="mt-3 text-lg font-semibold text-[#222222]">Không gian văn hóa Sen</h4>
+                <p class="mt-2 text-[#555555]">Công viên Văn Miếu và các tuyến đường</p>
+                <ul class="mt-4 space-y-2 text-[#555555] list-disc list-inside">
+                  <li>Lễ hội Ẩm thực Sen</li>
+                  <li>Không gian văn hóa Sen</li>
+                  <li>Triển lãm, trưng bày sản phẩm OCOP</li>
+                  <li>Quảng bá, xúc tiến du lịch</li>
+                  <li>Các hoạt động cộng đồng</li>
+                </ul>
+              </div>
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <span>20/06</span>
+                <h4 class="mt-3 text-lg font-semibold text-[#222222]">Hội nghị - Kết nối - Hợp tác</h4>
+                <p class="mt-2 text-[#555555]">Trung tâm Hội nghị tỉnh Đồng Tháp</p>
+                <ul class="mt-4 space-y-2 text-[#555555] list-disc list-inside">
+                  <li>Hội nghị kết nối giao thương</li>
+                  <li>Diễn đàn kinh tế xanh</li>
+                  <li>Xúc tiến đầu tư</li>
+                  <li>Kết nối phát triển ngành hàng sen</li>
+                  <li>Kết nối du lịch</li>
+                </ul>
+              </div>
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <span>21/06</span>
+                <h4 class="mt-3 text-lg font-semibold text-[#222222]">Lễ bế mạc</h4>
+                <p class="mt-2 text-[#555555]">Quảng trường Văn Miếu, Cao Lãnh</p>
+                <ul class="mt-4 space-y-2 text-[#555555] list-disc list-inside">
+                  <li>Lễ bế mạc</li>
+                  <li>Chương trình nghệ thuật đặc sắc</li>
+                  <li>Tổng kết và tôn vinh</li>
+                  <li>Giao lưu cộng đồng</li>
+                  <li>Hướng tới tương lai</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded-[36px] bg-[#F8BBD0]/15 p-6 shadow-[0_30px_80px_rgba(244,143,177,0.18)]" data-aos="zoom-in">
+            <!-- PLACEHOLDER 03: ảnh nội dung 2 -->
+            <img src="images/time line lễ hội sen.png" alt="Timeline Lễ hội Sen Đồng Tháp" class="h-full w-full object-cover" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="feature container" id="experience">
-      <div class="feature-header">
-        <span class="section-label">Hành trình khám phá</span>
-        <h2>Khi Đồng Tháp thức dậy cùng hương sen</h2>
-      </div>
-      <div class="feature-cards">
-        <article class="card">
-          <h3>Từ loài hoa đến biểu tượng</h3>
-          <p>Sen Đồng Tháp trở thành biểu tượng văn hóa, kinh tế và du lịch của tỉnh, mang chiều sâu lịch sử lẫn vẻ đẹp hiện đại.</p>
-        </article>
-        <article class="card">
-          <h3>Không gian lễ hội</h3>
-          <p>Hàng trăm gian hàng OCOP, khu ẩm thực Sen Hồng và triển lãm nghệ thuật nhiếp ảnh sen tạo nên một bản đồ trải nghiệm đa tầng.</p>
-        </article>
-        <article class="card">
-          <h3>Dòng người tham quan</h3>
-          <p>Dòng khách du lịch về với Cao Lãnh trong không khí lễ hội sôi động, hòa cùng nhạc hội, tiểu cảnh và hoạt động văn hóa đặc sắc.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="story-panel">
-      <div class="container story-grid">
-        <div>
-          <span class="section-label">Câu chuyện Lễ hội Sen</span>
-          <h2>Sen – Giá trị không chỉ nằm ở vẻ đẹp</h2>
-          <p>Từ hoa, lá, thân đến hạt sen đều trở thành sản phẩm OCOP cao cấp: trà sen, mỹ phẩm, tranh lá sen khô và hàng thủ công mỹ nghệ.</p>
-          <ul>
-            <li>Giá trị kinh tế tuần hoàn cho nông dân</li>
-            <li>Chuỗi sản phẩm sáng tạo và bền vững</li>
-            <li>Thương hiệu Đất Sen Hồng lan tỏa trong nước và quốc tế</li>
-          </ul>
-        </div>
-        <div class="story-image">
-          <img src="https://l-h-i-sen-ng-th-p-2026-286482501225.asia-southeast1.run.app/src/assets/images/tram_chim_crane_1782563224842.jpg" alt="Biểu tượng sếu đầu đỏ và sen hồng" />
+    <section id="infographic" class="section-pane py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div class="rounded-[36px] bg-[#4CAF50]/10 p-8 shadow-[0_25px_75px_rgba(76,175,80,0.12)]" data-aos="fade-right">
+            <p class="uppercase tracking-[0.35em] text-[#2E7D32]">Infographic</p>
+            <h2 class="mt-5 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Số liệu chính thức của Lễ hội Sen Đồng Tháp 2026</h2>
+            <p class="mt-6 text-[#555555]">Lễ hội năm nay ghi nhận quy mô lớn với nhiều hoạt động triển lãm, ẩm thực, trình diễn và xúc tiến thương mại.</p>
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="infographic-card"><i class="fa-solid fa-users"></i><strong>700.000</strong><p>lượt khách tham quan lễ hội theo thống kê sơ bộ từ 18/06 đến 21/06/2026.</p></div>
+              <div class="infographic-card"><i class="fa-solid fa-calendar-days"></i><strong>4</strong><p>ngày diễn ra lễ hội tại Quảng trường Văn Miếu, thành phố Cao Lãnh.</p></div>
+              <div class="infographic-card"><i class="fa-solid fa-building"></i><strong>126</strong><p>đơn vị, doanh nghiệp tham gia triển lãm ngành hàng sen và sản phẩm OCOP.</p></div>
+              <div class="infographic-card"><i class="fa-solid fa-person-dress"></i><strong>2.000+</strong><p>tà áo dài sen diễu hành tạo hình đóa sen khổng lồ, xác lập kỷ lục mới.</p></div>
+              <div class="infographic-card"><i class="fa-solid fa-utensils"></i><strong>Ẩm thực nghệ thuật</strong><p>Phố ẩm thực sen và đường Sen nghệ thuật kết hợp trải nghiệm văn hóa vùng miền.</p></div>
+              <div class="infographic-card"><i class="fa-solid fa-handshake"></i><strong>Xúc tiến thương mại</strong><p>Hội thảo “Từ ngành hàng Sen đến hệ sinh thái kinh tế Sen” kết nối cung cầu hiệu quả.</p></div>
+            </div>
+          </div>
+          <div class="grid gap-6">
+            <div class="feature-quote" data-aos="fade-up">
+              <p class="text-sm uppercase tracking-[0.35em] text-[#4CAF50]">Giá trị kinh tế</p>
+              <h3 class="mt-4 text-3xl font-semibold text-[#222222]">Du lịch kết nối chuỗi giá trị nông nghiệp và sản phẩm sen bản địa.</h3>
+              <p class="mt-4 text-[#555555]">Lễ hội tạo nền tảng thương mại, nâng cao giá trị thương hiệu sen và thúc đẩy đầu tư vào nông nghiệp, du lịch và văn hóa.</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <article class="economy-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="text-2xl font-semibold text-[#EC407A]">126</span>
+                <p class="mt-3 text-[#555555]">đơn vị tham gia triển lãm, đem đến sản phẩm OCOP, thủ công và dịch vụ du lịch.</p>
+              </article>
+              <article class="economy-card" data-aos="fade-up" data-aos-delay="200">
+                <span class="text-2xl font-semibold text-[#4CAF50]">2.000+</span>
+                <p class="mt-3 text-[#555555]">tà áo dài sen tham gia diễu hành, tạo nên tượng đài hoa sen sống động.</p>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="timeline container" id="stories">
-      <span class="section-label">Biên niên ký</span>
-      <h2>Hành trình phát triển Lễ hội Sen</h2>
-      <div class="timeline-grid">
-        <div class="timeline-item">
-          <span>2022</span>
-          <p>Lễ hội Sen lần đầu tiên tổ chức với hơn 200 món ăn chế biến từ sen và khởi đầu truyền thống.</p>
-        </div>
-        <div class="timeline-item">
-          <span>2024</span>
-          <p>Quy mô mở rộng, kết nối giao lưu quốc tế và phát triển sản phẩm OCOP giá trị cao.</p>
-        </div>
-        <div class="timeline-item">
-          <span>2026</span>
-          <p>Chủ đề "Khi hồn sen kể chuyện" thu hút 450.000 lượt khách và sáu chương trình nghệ thuật đa phương tiện.</p>
+    <section id="economy" class="section-pane bg-[#FDFCF9] py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div class="rounded-[36px] bg-white p-10 shadow-[0_30px_80px_rgba(0,0,0,0.08)]" data-aos="fade-right">
+            <p class="uppercase tracking-[0.3em] text-[#4CAF50]">Giá trị kinh tế</p>
+            <h2 class="mt-5 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Hành trình chuyển hóa sen thành sản phẩm, du lịch và thương hiệu.</h2>
+            <p class="mt-6 text-lg leading-8 text-[#555555]">Từ bông sen tới sản phẩm OCOP, từ ẩm thực tới trải nghiệm check-in, Đồng Tháp xây dựng một hệ sinh thái kinh tế bền vững.</p>
+            <ul class="mt-8 grid gap-4 text-[#555555]">
+              <li class="flex items-start gap-3"><span class="mt-1 text-[#EC407A]"><i class="fa-solid fa-check"></i></span><span>Phát triển dòng sản phẩm sen chất lượng cao và quà lưu niệm du lịch.</span></li>
+              <li class="flex items-start gap-3"><span class="mt-1 text-[#EC407A]"><i class="fa-solid fa-check"></i></span><span>Xây dựng thương hiệu địa phương gắn với thông điệp văn hóa và bền vững.</span></li>
+              <li class="flex items-start gap-3"><span class="mt-1 text-[#EC407A]"><i class="fa-solid fa-check"></i></span><span>Kết nối điểm đến du lịch với cộng đồng nông dân và sản phẩm địa phương.</span></li>
+            </ul>
+          </div>
+          <div class="relative overflow-hidden rounded-[36px] bg-[#FFF5E1] shadow-[0_30px_80px_rgba(244,143,177,0.16)]" data-aos="zoom-in">
+            <!-- PLACEHOLDER 04: ảnh nội dung 3 -->
+            <img src="images/z7982763209058_9af14fdb4051fd663edb25625ffa1f83.jpg" alt="Sản phẩm OCOP từ sen" class="h-full min-h-[420px] w-full object-cover" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="stats container" id="stats">
-      <div class="stats-header">
-        <span class="section-label">Những con số biết nói</span>
-        <h2>Thành tựu và sức bật của Đất Sen Hồng</h2>
-      </div>
-      <div class="stats-grid">
-        <article class="stat-card">
-          <strong>1.800 ha</strong>
-          <p>Diện tích trồng sen toàn tỉnh</p>
-        </article>
-        <article class="stat-card">
-          <strong>50+</strong>
-          <p>Sản phẩm OCOP từ sen đạt chuẩn 3-5 sao</p>
-        </article>
-        <article class="stat-card">
-          <strong>4,5 triệu</strong>
-          <p>Lượt khách du lịch năm 2025</p>
-        </article>
-        <article class="stat-card">
-          <strong>2.000 tỷ</strong>
-          <p>Doanh thu du lịch 2025</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="gallery container">
-      <span class="section-label">Album ảnh</span>
-      <h2>Không gian check-in sáng tạo</h2>
-      <div class="gallery-grid">
-        <img src="https://picsum.photos/seed/gall1/500/650" alt="Hình ảnh đầm sen Cao Lãnh" />
-        <img src="https://picsum.photos/seed/gall2/500/650" alt="Khinh khí cầu lễ hội" />
-        <img src="https://picsum.photos/seed/gall3/500/650" alt="Linh vật Bé Sen chào đón" />
-      </div>
-    </section>
-
-    <section class="cta container">
-      <div>
-        <span class="section-label">Trải nghiệm đa phương tiện</span>
-        <h2>Khám phá Lễ hội Sen Đồng Tháp như một ấn phẩm báo chí chuyên nghiệp</h2>
-        <p>Website được thiết kế để tái hiện không khí lễ hội, kể chuyện sinh động và truyền cảm hứng du lịch đồng thời.</p>
-      </div>
-      <a class="button button-primary" href="#contact">Liên hệ thiết kế</a>
-    </section>
-
-    <section class="contact container" id="contact">
-      <div class="contact-panel">
-        <div>
-          <span class="section-label">Liên hệ</span>
-          <h2>Thiết kế website sự kiện chuyên nghiệp</h2>
-          <p>Nếu bạn cần code tương tự như website tham khảo này, tôi có thể giúp dựng giao diện tĩnh và bổ sung hiệu ứng tương tác.</p>
+    <section id="video" class="section-pane py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+          <div data-aos="fade-right">
+            <p class="uppercase tracking-[0.35em] text-[#4CAF50]">Phỏng vấn du khách</p>
+            <h2 class="mt-4 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Lắng nghe trải nghiệm của khách du lịch giữa không gian sen hồng Đồng Tháp.</h2>
+            <p class="mt-6 text-[#555555]">Video phỏng vấn ghi lại cảm xúc, góc nhìn và những kỷ niệm sống động của du khách tại lễ hội.</p>
+          </div>
+          <div class="relative overflow-hidden rounded-[36px] bg-black/5 shadow-[0_30px_80px_rgba(0,0,0,0.12)] group" data-aos="zoom-in">
+            <!-- PLACEHOLDER 05: 1 video phỏng vấn -->
+            <video controls playsinline preload="metadata" poster="images/z7984595444577_a2b6c0d29ff9c0b6bc0cdd2c5e9c11a3 - Sao chép.jpg" class="w-full h-auto rounded-[32px] bg-black">
+              <source src="videos/7984382823035.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ video.
+            </video>
+          </div>
         </div>
-        <form class="contact-form">
-          <label>
-            Tên của bạn
-            <input type="text" placeholder="Nhập tên..." />
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Tin nhắn
-            <textarea rows="4" placeholder="Gợi ý nội dung hoặc yêu cầu..."></textarea>
-          </label>
-          <button class="button button-secondary" type="submit">Gửi thông tin</button>
-        </form>
+      </div>
+    </section>
+
+    <section class="section-pane bg-[#FFFDF8] py-24">
+      <div class="mx-auto max-w-6xl px-5 lg:px-8" data-aos="fade-up">
+        <div class="rounded-[32px] bg-[#F8BBD0]/30 p-10 text-center shadow-[0_25px_60px_rgba(244,143,177,0.16)]">
+          <p class="text-sm uppercase tracking-[0.35em] text-[#EC407A]">Pull quote</p>
+          <blockquote class="mt-8 text-3xl font-semibold leading-tight text-[#222222]">“Đồng Tháp không chỉ có hoa sen — nơi đây có cả một câu chuyện dài về con người, văn hóa và khát vọng vươn xa.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pane py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div class="rounded-[36px] bg-[#4CAF50]/10 p-8 shadow-[0_25px_70px_rgba(76,175,80,0.12)]" data-aos="fade-right">
+            <p class="uppercase tracking-[0.35em] text-[#2E7D32]">Pull quote</p>
+            <h3 class="mt-5 text-3xl font-[Playfair_Display] leading-tight text-[#222222]">“Sen ở Đồng Tháp là hình ảnh của một hành trình văn hóa và kinh tế lan tỏa.”</h3>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <article class="pull-quote-card" data-aos="fade-up" data-aos-delay="100">
+              <p class="text-[#555555]">“Mỗi nơi tôi đến đều có những câu chuyện mới về sen, từ đồng lúa đến cái chén trà.”</p>
+            </article>
+            <article class="pull-quote-card" data-aos="fade-up" data-aos-delay="200">
+              <p class="text-[#555555]">“Du khách đánh giá đây là một trong những trải nghiệm báo chí du lịch giàu cảm xúc nhất.”</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pane bg-[#FAFAF8] py-24" id="gallery">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="uppercase tracking-[0.35em] text-[#4CAF50]">Gallery</p>
+            <h2 class="mt-4 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Hình ảnh lễ hội Sen qua ống kính.</h2>
+          </div>
+          <p class="max-w-xl text-[#555555]">Bấm vào ảnh để xem lightbox và cảm nhận không gian lễ hội từ nhiều góc nhìn.</p>
+        </div>
+        <div class="gallery-masonry mt-10" id="photo-gallery">
+          <a href="images/z7982762645031_10e88bdfb62adf165d0a704b2b0fb107.jpg" class="gallery-item" data-lg-size="1400-933">
+            <img src="images/z7982762645031_10e88bdfb62adf165d0a704b2b0fb107.jpg" alt="Sắc sen hồng" loading="lazy" />
+          </a>
+          <a href="images/z7982762699439_55ecdc73e7ac1990794a2905cc27b77a.jpg" class="gallery-item" data-lg-size="1400-933">
+            <img src="images/z7982762699439_55ecdc73e7ac1990794a2905cc27b77a.jpg" alt="Du khách tham quan" loading="lazy" />
+          </a>
+          <a href="images/z7982762316163_26e49bd448785e6af23be224c1bf9be0.jpg" class="gallery-item" data-lg-size="1400-933">
+            <img src="images/z7982762316163_26e49bd448785e6af23be224c1bf9be0.jpg" alt="Khinh khí cầu trên đầm sen" loading="lazy" />
+          </a>
+          <a href="images/z7982762514175_2057fa6293fa79874217d77bc21687bb.jpg" class="gallery-item" data-lg-size="1400-933">
+            <img src="images/z7982762514175_2057fa6293fa79874217d77bc21687bb.jpg" alt="Đầm sen Đồng Tháp" loading="lazy" />
+          </a>
+          <a href="images/z7982761432595_70a437a9d333654ca7ae9ad22752c344.jpg" class="gallery-item" data-lg-size="1400-933">
+            <img src="images/z7982761432595_70a437a9d333654ca7ae9ad22752c344.jpg" alt="Du khách và hoa sen" loading="lazy" />
+          </a>
+          <a href="images/z7982762645031_10e88bdfb62adf165d0a704b2b0fb107.jpg" class="gallery-item" data-lg-size="1400-933">
+            <img src="images/z7982762645031_10e88bdfb62adf165d0a704b2b0fb107.jpg" alt="Sen và nước" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="culture" class="relative min-h-[70vh] overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(244,143,177,0.20),_transparent_35%)] py-24">
+      <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image:url('images/z7982762514175_2057fa6293fa79874217d77bc21687bb.jpg');"></div>
+      <div class="absolute inset-0 bg-[#222222]/60"></div>
+      <div class="relative mx-auto max-w-6xl px-5 text-white lg:px-8" data-aos="fade-up">
+        <p class="uppercase tracking-[0.35em] text-[#FFD54F]">Không gian văn hóa</p>
+        <h2 class="mt-6 text-5xl font-[Playfair_Display] leading-tight">Văn hóa Đồng Tháp hiện lên qua mỗi cánh sen, mỗi bước chân khách du lịch.</h2>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-[#F8F8F8]/90">Với những hoạt động biểu diễn, nghệ thuật và lễ hội, Đồng Tháp khắc sâu vào trải nghiệm du lịch một hình ảnh thanh lịch, gần gũi.</p>
+      </div>
+    </section>
+
+    <section id="reportage" class="section-pane py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div class="rounded-[36px] bg-[#FFFDF8] p-10 shadow-[0_25px_70px_rgba(0,0,0,0.08)]" data-aos="fade-right">
+            <p class="uppercase tracking-[0.35em] text-[#4CAF50]">Góc tác nghiệp</p>
+            <h2 class="mt-5 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Nhật ký tác nghiệp của phóng viên giữa lễ hội Sen.</h2>
+            <p class="mt-6 text-[#555555]">Ghi chép, phóng sự ảnh và phỏng vấn là điểm nhấn cho một tác phẩm mega story chuyên nghiệp.</p>
+            <div class="mt-10 space-y-5">
+              <div class="flex gap-4 rounded-3xl bg-[#F48FB1]/10 p-6">
+                <div class="flex h-14 w-14 items-center justify-center rounded-3xl bg-[#EC407A]/10 text-[#EC407A]"><i class="fa-solid fa-camera"></i></div>
+                <div>
+                  <p class="font-semibold text-[#222222]">Ảnh tác nghiệp</p>
+                  <p class="mt-2 text-[#555555]">Góc máy chân thực, những khung hình sống động giữa cánh đồng sen.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 rounded-3xl bg-[#FFEB3B]/10 p-6">
+                <div class="flex h-14 w-14 items-center justify-center rounded-3xl bg-[#FFC107]/10 text-[#FFB300]"><i class="fa-solid fa-microphone"></i></div>
+                <div>
+                  <p class="font-semibold text-[#222222]">Phỏng vấn khách</p>
+                  <p class="mt-2 text-[#555555]">Giọng nói của du khách và người dân làm nên một câu chuyện đa chiều.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 rounded-3xl bg-[#4CAF50]/10 p-6">
+                <div class="flex h-14 w-14 items-center justify-center rounded-3xl bg-[#2E7D32]/10 text-[#2E7D32]"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <p class="font-semibold text-[#222222]">Vị trí tác nghiệp</p>
+                  <p class="mt-2 text-[#555555]">Cao Lãnh, vườn sen, phố cổ và đại lộ khinh khí cầu tạo nên hành trình hoàn chỉnh.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-[36px] bg-[#4CAF50]/10 p-10 text-[#222222] shadow-[0_25px_70px_rgba(76,175,80,0.12)]" data-aos="fade-left">
+            <p class="uppercase tracking-[0.35em] text-[#2E7D32]">Tri thức</p>
+            <div class="mt-8 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+              <div class="space-y-6">
+                <img src="images/z7982762152290_241ebf403c212350ba86883614f33051-copy.jpg" alt="Ảnh tác nghiệp Trần Trung Kiên" class="h-full w-full rounded-[28px] object-cover" loading="lazy" />
+                <video controls playsinline preload="metadata" poster="images/z7982762755468_5254ddbdf7a7da87ebbe564fd2bbbea8-copy.jpg" class="w-full h-auto rounded-[28px] bg-black">
+                  <source src="videos/7982779440001-copy.mp4" type="video/mp4" />
+                  Trình duyệt của bạn không hỗ trợ video.
+                </video>
+                <p class="text-sm text-[#555555]">Ảnh và video tác nghiệp: Trần Trung Kiên.</p>
+                <p class="text-xs text-[#888888]">Nguồn: Trần Trung Kiên. (xem chi tiết lễ hội ở trang Cổng thông tin điện tử Đồng Tháp <a href="https://dongthap.gov.vn/le-hoi-sen-dong-thap" target="_blank" rel="noopener noreferrer" class="text-[#EC407A] underline">https://dongthap.gov.vn/le-hoi-sen-dong-thap</a>)</p>
+              </div>
+              <div>
+                <p class="text-xl font-semibold text-[#222222]">Một góc magazine dành cho du lịch, sản phẩm và trải nghiệm học thuật.</p>
+                <p class="mt-5 text-[#555555] leading-8">Đây là không gian kể chuyện bằng cả chữ và hình, phù hợp với độc giả muốn tìm hiểu sâu và cảm nhận không gian Đồng Tháp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="section-pane bg-[#FFFDF8] py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8" data-aos="fade-up">
+        <div class="rounded-[36px] border border-[#F48FB1]/20 bg-white p-10 shadow-[0_30px_70px_rgba(244,143,177,0.12)]">
+          <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div>
+              <p class="uppercase tracking-[0.35em] text-[#EC407A]">Cảm nhận du khách</p>
+              <h2 class="mt-5 text-4xl font-[Playfair_Display] leading-tight text-[#222222]">Bạn đã trải nghiệm lễ hội thế nào?</h2>
+              <p class="mt-6 text-[#555555]">Hãy để lại cảm nhận của bạn khi tham gia Lễ hội Sen Đồng Tháp. Mỗi bình luận là giá trị cho câu chuyện của chúng tôi.</p>
+            </div>
+            <div>
+              <form id="feedbackForm" class="space-y-4">
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <input id="feedbackName" type="text" placeholder="Tên của bạn" class="w-full rounded-[28px] border border-[#E0E0E0] bg-[#FFFDF8] px-5 py-4 text-sm text-[#222222] outline-none focus:border-[#EC407A]" />
+                  <input id="feedbackHometown" type="text" placeholder="Quê quán" class="w-full rounded-[28px] border border-[#E0E0E0] bg-[#FFFDF8] px-5 py-4 text-sm text-[#222222] outline-none focus:border-[#EC407A]" />
+                </div>
+                <textarea id="feedbackInput" rows="5" placeholder="Viết cảm nhận của bạn..." class="w-full rounded-[28px] border border-[#E0E0E0] bg-[#FFFDF8] px-5 py-4 text-sm text-[#222222] outline-none focus:border-[#EC407A]"></textarea>
+                <button type="submit" class="inline-flex items-center rounded-full bg-[#EC407A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#F48FB1]">Gửi cảm nhận</button>
+              </form>
+            </div>
+          </div>
+          <div class="mt-10">
+            <h3 class="text-2xl font-semibold text-[#222222]">Cảm nhận gần đây</h3>
+            <div id="feedbackList" class="mt-6 space-y-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="final" class="relative overflow-hidden py-24">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/z7982762699439_55ecdc73e7ac1990794a2905cc27b77a.jpg');"></div>
+      <div class="absolute inset-0 bg-[#222222]/70"></div>
+      <div class="relative mx-auto max-w-6xl px-5 text-white lg:px-8" data-aos="fade-up">
+        <div class="rounded-[36px] border border-white/10 bg-black/30 p-12 text-center shadow-[0_40px_90px_rgba(0,0,0,0.45)]">
+          <p class="uppercase tracking-[0.35em] text-[#FFD54F]">Kết bài</p>
+          <h2 class="mt-6 text-5xl font-[Playfair_Display] leading-tight">Sen Đồng Tháp đã kể một câu chuyện về bản sắc, sáng tạo và khát vọng vươn xa.</h2>
+          <p class="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#F3E8D8]">Đây là phần kết của Mega Story đầy cảm hứng — một nền tảng hoàn chỉnh để bạn tiếp tục viết, chia sẻ và giữ trọn ký ức về lễ hội sen Đồng Tháp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="background-music" class="section-pane bg-[#FFF8F2] py-16">
+      <div class="mx-auto max-w-6xl px-5 lg:px-8" data-aos="fade-up">
+        <div class="rounded-[36px] border border-[#F48FB1]/20 bg-white p-8 shadow-[0_30px_70px_rgba(244,143,177,0.12)]">
+          <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div>
+              <p class="uppercase tracking-[0.35em] text-[#EC407A]">Nhạc nền</p>
+              <h2 class="mt-4 text-4xl font-[Playfair_Display] text-[#222222]">Nhạc nền cho câu chuyện Đồng Tháp</h2>
+              <p class="mt-4 max-w-2xl text-[#555555]">Nhạc nền là bài YouTube được chọn. Nếu bạn có file audio của bài này, đặt vào thư mục audio để trang phát trực tiếp.</p>
+            </div>
+            <div class="audio-card rounded-[28px] bg-[#F8BBD0]/10 p-6">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-[#2E7D32]">Trình phát nhạc</p>
+              <audio controls preload="metadata" autoplay loop id="backgroundAudio" class="w-full rounded-[18px] bg-[#ffffff] p-2 shadow-inner shadow-[#222222]/5">
+                <source src="audio/chao-em-doa-sen.m4a" type="audio/mp4" />
+                Trình duyệt của bạn không hỗ trợ phát nhạc.
+              </audio>
+              <button type="button" id="audioToggle" class="mt-4 inline-flex rounded-full bg-[#EC407A] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#F48FB1]">Nghe nhạc nền</button>
+              <p class="mt-4 text-xs text-[#555555]">Nhạc nền đang dùng file M4A: <code>audio/chao-em-doa-sen.m4a</code>. Nhấn nút để bật và nghe trực tiếp.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Đất Sen Hồng • Thiết kế website chuyên nghiệp</p>
-      <p>Thiết kế bởi nhóm phóng viên trẻ Văn hóa Nam Bộ</p>
+  <button type="button" id="audioToggleFloating" class="audio-floating-btn" aria-label="Nghe nhạc nền"><i class="fa-solid fa-music"></i></button>
+  <div class="chatbot fixed bottom-6 right-6 z-50 rounded-[32px] border border-[#EC407A]/30 bg-white shadow-[0_30px_70px_rgba(236,64,122,0.18)]" id="chatbot">
+    <button class="chat-toggle flex items-center justify-center gap-3 rounded-full bg-[#EC407A] shadow-lg shadow-[#EC407A]/20" type="button" aria-label="Sen Hồng AI">
+      <img src="images/1617361763-dung-de-be-sen-mot-minh.png" alt="Sen nhỏ" class="chat-toggle-img" />
+      <span class="chat-toggle-label">Sen Hồng AI</span>
+    </button>
+    <div class="chat-body hidden rounded-b-[32px] bg-[#FFFDF8] p-4">
+      <div class="chat-messages flex flex-col gap-3 overflow-y-auto pr-2" id="chatMessages">
+        <div class="chat-message bot rounded-3xl bg-[#F8BBD0]/90 p-4 text-sm text-[#222222]"><strong>Sen Hồng AI</strong>: Chào bạn! Tôi có thể giúp thông tin về Lễ hội Sen, Đồng Tháp, du lịch và ẩm thực.</div>
+      </div>
+      <form class="mt-4 flex gap-3" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Gõ câu hỏi của bạn..." class="flex-1 rounded-3xl border border-[#E0E0E0] bg-white px-4 py-3 text-sm text-[#222222] outline-none focus:border-[#EC407A]" />
+        <button type="submit" class="rounded-3xl bg-[#EC407A] px-4 py-3 text-white transition hover:bg-[#F48FB1]">Gửi</button>
+      </form>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm text-[#555555]">
+        <button type="button" class="chat-suggest rounded-3xl border border-[#E0E0E0] bg-white p-3 text-left">Lễ hội Sen</button>
+        <button type="button" class="chat-suggest rounded-3xl border border-[#E0E0E0] bg-white p-3 text-left">Đồng Tháp</button>
+        <button type="button" class="chat-suggest rounded-3xl border border-[#E0E0E0] bg-white p-3 text-left">Ẩm thực</button>
+        <button type="button" class="chat-suggest rounded-3xl border border-[#E0E0E0] bg-white p-3 text-left">Sản phẩm OCOP</button>
+        <button type="button" class="chat-suggest rounded-3xl border border-[#E0E0E0] bg-white p-3 text-left">Video du khách</button>
+        <button type="button" class="chat-suggest rounded-3xl border border-[#E0E0E0] bg-white p-3 text-left">Điểm check-in</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-[#2E7D32]/20 bg-[#2E7D32] py-16 text-[#F8F8F8]">
+    <div class="mx-auto flex max-w-7xl flex-col gap-8 px-5 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div class="space-y-3">
+        <p class="text-sm uppercase tracking-[0.35em] text-[#FFD54F]">Đất Sen Hồng</p>
+        <p class="text-lg font-semibold">Mega Story - Lễ hội Sen Đồng Tháp</p>
+      </div>
+      <div class="grid gap-3 text-sm text-[#F8F8F8]/90 sm:grid-cols-3">
+        <p>Tác Giả: Trần Trung Kiên</p>
+        <p>© 2026 Đất Sen Hồng</p>
+        <p>Liên hệ: 2007kientrann@gmail.com</p>
+      </div>
+      <div class="flex items-center gap-4 text-white/90">
+        <a href="#" class="transition hover:text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="transition hover:text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="transition hover:text-white"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
